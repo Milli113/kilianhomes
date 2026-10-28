@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Lakásválasztó – KiliánHomes Pápa</title>
+<meta name="description" content="Élő lakásválasztó: a KiliánHomes 14 lakása alaprajzon, árakkal, méretekkel és elérhetőséggel.">
+<meta name="theme-color" content="#152234">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,200;9..144,300;9..144,400&family=Manrope:wght@400;500;600;700&display=swap&subset=latin-ext" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="hdr">
+  <div class="wrap">
+    <a class="logo" href="index.html" data-tr="KiliánHomes" aria-label="KiliánHomes főoldal">Kilián<b>Homes</b><small>Pápa</small></a>
+    <nav class="nav" aria-label="Fő navigáció">
+      <a href="lakasok.html" aria-current="page">Lakásválasztó</a>
+      <a href="index.html#muszaki" data-tr="Műszaki tartalom">Műszaki tartalom</a>
+      <a href="index.html#menet" data-tr="Vásárlás menete">Vásárlás menete</a>
+      <a href="index.html#mintalakas" data-tr="Mintalakás">Mintalakás</a>
+      <a href="index.html#kapcsolat" class="btn btn--gold" data-tr="Kapcsolat"><span>Árajánlatot kérek</span></a>
+    </nav>
+    <button class="burger" aria-label="Menü" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="sel-hero on-dark">
+    <div class="wrap">
+      <div class="sel-hero__top">
+        <div>
+          <span class="eyebrow">Lakásválasztó</span>
+          <h1 id="selTitle" style="font-size:clamp(2.4rem,5vw,4.2rem);margin-top:18px">Lakások, árak és <em>alaprajzok</em></h1>
+          <p class="lead" id="selLead">Vigye az egeret egy lakásra az alapadatokért, kattintson az alaprajz, a helyiségek és a vételár megtekintéséhez.</p>
+        </div>
+        <div class="legend" id="legend">
+          <span><i class="lg-free"></i>Szabad · <b id="cFree">13</b></span>
+          <span><i class="lg-res"></i>Foglalt · <b id="cRes">1</b></span>
+          <span><i class="lg-sold"></i>Eladva · <b id="cSold">0</b></span>
+        </div>
+      </div>
+      <div class="sel-bar">
+        <div class="seg" role="group" aria-label="Szint" id="floorSeg">
+          <span class="seg__ind" aria-hidden="true"></span>
+          <button type="button" aria-pressed="true" data-floor="f">Földszint <small>Lakás 1–8</small></button>
+          <button type="button" aria-pressed="false" data-floor="t">Tetőtér <small>Lakás 6, 8–14</small></button>
+        </div>
+        <div class="filters" role="group" aria-label="Szűrés">
+          <button class="chip" type="button" aria-pressed="false" data-filter="rooms2">2 szobás</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter="rooms3">3 szobás</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter="garden">Saját kert</button>
+          <button class="chip" type="button" aria-pressed="false" data-filter="free">Csak szabad</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="plan-wrap">
+    <div class="wrap">
+      <div class="plan" id="plan">
+        <div class="plan__stage" id="planStage"></div>
+        <div class="plan__hint">
+          <span id="planHint">Kattintson egy lakásra az adatlap megnyitásához.</span>
+          <label><input type="checkbox" id="showAll" checked> Lakásszámok megjelenítése</label>
+        </div>
+      </div>
+
+      <div class="ulist">
+        <div class="ulist__head">
+          <div style="display:grid;gap:14px">
+            <span class="eyebrow">Mind a 14 lakás</span>
+            <h2 style="font-size:clamp(1.8rem,3vw,2.6rem)">Táblázatos nézet</h2>
+          </div>
+          <p class="note">Tetőtéri lakások 800 ezer Ft/m²-től, kertkapcsolatos lakások 900 ezer Ft/m²-től (nettó alapterületre vetítve). Az árak bruttó árak, kulcsrakész állapotra vonatkoznak.</p>
+        </div>
+        <div class="utable-wrap">
+          <table class="utable" id="utable">
+            <thead><tr>
+              <th data-k="n">Lakás<span class="so">↕</span></th>
+              <th data-k="level">Szint<span class="so">↕</span></th>
+              <th data-k="rooms">Szobák<span class="so">↕</span></th>
+              <th data-k="net">Nettó alapterület<span class="so">↕</span></th>
+              <th data-k="ext">Terasz<span class="so">↕</span></th>
+              <th data-k="price">Bruttó vételár<span class="so">↕</span></th>
+              <th data-k="status">Státusz<span class="so">↕</span></th>
+              <th aria-label="Megnyitás"></th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="garage">
+        <div style="display:grid;gap:20px">
+          <span class="eyebrow">Garázsválasztó</span>
+          <h2 style="font-size:clamp(1.8rem,3vw,2.6rem)">Hat önálló <em>garázs</em> az udvarban</h2>
+          <p class="lead">Az udvarban 6 önálló garázs épül. Kattintson a kiválasztott garázsra a képen vagy a számokon.</p>
+          <div class="gnums" id="gnums"></div>
+          <p id="gInfo" style="font-weight:600">Önálló garázs · bruttó 10 millió Ft / db · Udvari parkoló (15 db) · bruttó 2,5 millió Ft / db</p>
+        </div>
+        <div class="garage__img" id="garageImg">
+          <img src="https://kilianhomes.hu/img/garazsok.jpg" alt="A garázssor az 1–6. számú garázsokkal" loading="lazy">
+          <svg viewBox="0 0 820 240" id="gsv"></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="tip" id="tip" role="tooltip" aria-hidden="true"></div>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__top">
+      <div class="ftr__big">Kilián<b>Homes</b></div>
+      <div style="display:grid;gap:6px;text-align:right">
+        <span>Értékesítés és információ</span>
+        <a href="tel:+36703190090" style="color:#fff;font-size:1.2rem;font-weight:600">+36 70 319 0090</a>
+        <span>joolaszlo@me.com</span>
+      </div>
+    </div>
+    <div class="ftr__bot">
+      <span>Pápa, Vízmű utca 6., Future Investor Kft. A tájékoztató adatok nem minősülnek ajánlattételnek.</span>
+      <div class="ftr__links">
+        <a href="https://kilianhomes.hu/impresszum.html">Impresszum</a>
+        <a href="https://kilianhomes.hu/adatkezeles.html">Adatkezelési tájékoztató</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="mcta"><a href="tel:+36703190090">Hívás</a><a href="index.html#kapcsolat" data-tr="Kapcsolat">Árajánlat</a></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/selector.js"></script>
+</body>
+</html>

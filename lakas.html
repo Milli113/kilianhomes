@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Lakás – KiliánHomes Pápa</title>
+<meta name="description" content="A KiliánHomes lakásának alaprajza, helyiségei, vételára és műszaki tartalma.">
+<meta name="theme-color" content="#152234">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,200;9..144,300;9..144,400&family=Manrope:wght@400;500;600;700&display=swap&subset=latin-ext" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="hdr">
+  <div class="wrap">
+    <a class="logo" href="index.html" data-tr="KiliánHomes" aria-label="KiliánHomes főoldal">Kilián<b>Homes</b><small>Pápa</small></a>
+    <nav class="nav" aria-label="Fő navigáció">
+      <a href="lakasok.html" data-tr="Lakásválasztó">Lakásválasztó</a>
+      <a href="index.html#muszaki" data-tr="Műszaki tartalom">Műszaki tartalom</a>
+      <a href="index.html#menet" data-tr="Vásárlás menete">Vásárlás menete</a>
+      <a href="index.html#mintalakas" data-tr="Mintalakás">Mintalakás</a>
+      <a href="index.html#kapcsolat" class="btn btn--gold" id="navCta" data-tr="Kapcsolat"><span>Árajánlatot kérek</span></a>
+    </nav>
+    <button class="burger" aria-label="Menü" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="unitMain">
+  <section class="u-hero on-dark">
+    <div class="wrap">
+      <nav class="u-crumb" aria-label="Morzsamenü">
+        <a href="index.html" data-tr="KiliánHomes">Főoldal</a><span>/</span>
+        <a href="lakasok.html" data-tr="Lakásválasztó" id="crumbSel">Lakásválasztó</a><span>/</span>
+        <span id="crumbUnit" style="color:#fff">Lakás</span>
+      </nav>
+      <div class="u-head">
+        <div class="u-no num" id="uNo" aria-hidden="true">01</div>
+        <div class="u-title">
+          <span class="st" id="uStatus">Szabad</span>
+          <h1 id="uTitle">Lakás</h1>
+          <div class="u-tags" id="uTags"></div>
+        </div>
+        <div class="u-price">
+          <span>Bruttó vételár</span>
+          <b id="uPrice">–</b>
+          <small id="uDeposit"></small>
+        </div>
+      </div>
+      <div class="u-kpis" id="uKpis"></div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:clamp(50px,6vw,80px)">
+    <div class="wrap u-main">
+      <div class="u-plan">
+        <div class="u-plan__img" id="uPlanImg" role="button" tabindex="0" aria-label="Alaprajz nagyítása">
+          <img id="uPlan" src="" alt="">
+          <div class="mask" aria-hidden="true"></div>
+        </div>
+        <div class="u-plan__bar">
+          <span>Kattintson a rajzra a nagyításhoz.</span>
+          <button type="button" id="zoomBtn">⤢ Nagyítás</button>
+        </div>
+      </div>
+
+      <div class="u-side">
+        <div style="display:grid;gap:14px">
+          <span class="eyebrow">Helyiségek méretei (m²)</span>
+          <div class="rooms" id="uRooms"></div>
+        </div>
+
+        <div style="display:grid;gap:14px">
+          <span class="eyebrow">Elhelyezkedés az épületben</span>
+          <div id="uMinis" style="display:grid;gap:12px"></div>
+        </div>
+
+        <div class="u-box">
+          <h3>Érdekli ez a lakás?</h3>
+          <div class="u-cta">
+            <a class="btn" id="ctaQuote" href="index.html#kapcsolat" data-tr="Kapcsolat"><span>Árajánlatot kérek</span><span class="arr">→</span></a>
+            <a class="btn btn--ghost" id="ctaVisit" href="index.html#kapcsolat" data-tr="Kapcsolat"><span>Személyes bejárást kérek</span></a>
+            <a class="link" id="ctaPdf" href="#" target="_blank" rel="noopener" style="justify-self:start;margin-top:6px">Lakásadatlap letöltése (PDF) ↗</a>
+          </div>
+          <p style="color:var(--muted);font-size:.9rem">Értékesítés és információ: <b style="color:var(--ink);user-select:all">+36 70 319 0090</b></p>
+        </div>
+        <p class="u-disclaimer">Az adatok tájékoztató jellegűek, az ingatlanfejlesztő fenntartja a változtatás jogát az alaprajzi adatokkal, a műszaki felszereléssel és a burkolatokkal kapcsolatban.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec--navy on-dark">
+    <div class="wrap">
+      <div class="sec-head sec-head--split">
+        <div style="display:grid;gap:22px">
+          <span class="eyebrow">Műszaki tartalom</span>
+          <h2 data-split>Ebben a lakásban, <em>felár nélkül</em></h2>
+        </div>
+        <div style="display:grid;gap:20px;justify-items:start">
+          <p class="lead" data-up>Az alábbi tételek a vételár részét képezik, felár nélkül. A teljes műszaki tartalmat a vevői műszaki leírás tartalmazza.</p>
+          <a class="btn btn--ghost" href="https://kilianhomes.hu/muszaki/kilian-rezidencia-vevoi-muszaki-leiras.pdf" target="_blank" rel="noopener" data-up><span>Vevői műszaki leírás</span><span class="arr">↗</span></a>
+        </div>
+      </div>
+      <div class="uspec" id="uSpec" data-stagger></div>
+    </div>
+  </section>
+
+  <section class="sec sec--white" style="padding-block:0">
+    <div class="wrap">
+      <nav class="u-nav" id="uNav" aria-label="Lapozás a lakások között"></nav>
+    </div>
+  </section>
+</main>
+
+<div class="zoom" id="zoom" role="dialog" aria-modal="true" aria-label="Alaprajz nagyítva">
+  <div class="zoom__bar">
+    <button type="button" id="zOut" aria-label="Kicsinyítés">−</button>
+    <button type="button" id="zIn" aria-label="Nagyítás">+</button>
+    <button type="button" id="zClose" aria-label="Bezárás">✕</button>
+  </div>
+  <img id="zImg" src="" alt="">
+</div>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__top">
+      <div class="ftr__big">Kilián<b>Homes</b></div>
+      <div style="display:grid;gap:6px;text-align:right">
+        <span>Értékesítés és információ</span>
+        <a href="tel:+36703190090" style="color:#fff;font-size:1.2rem;font-weight:600">+36 70 319 0090</a>
+        <span>joolaszlo@me.com</span>
+      </div>
+    </div>
+    <div class="ftr__bot">
+      <span>Pápa, Vízmű utca 6., Future Investor Kft. A tájékoztató adatok nem minősülnek ajánlattételnek.</span>
+      <div class="ftr__links">
+        <a href="https://kilianhomes.hu/impresszum.html">Impresszum</a>
+        <a href="https://kilianhomes.hu/adatkezeles.html">Adatkezelési tájékoztató</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="mcta"><a href="tel:+36703190090">Hívás</a><a href="index.html#kapcsolat" id="mctaQuote" data-tr="Kapcsolat">Árajánlat</a></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/unit.js"></script>
+</body>
+</html>
